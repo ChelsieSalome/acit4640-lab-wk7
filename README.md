@@ -1,11 +1,6 @@
 # acit4640-lab-wk7
 Salome Chelsie Lele Wambo - A01372274
 
-# intro-to-ansible-lab-files
-
-
-Starter files for the intro to Ansible Lab, 4640.
-
 
 ## Creating the ssh keypair
 
@@ -17,11 +12,11 @@ inside ~/acit-4640/intro-to-ansible-lab-files/scripts:
 `./import_lab_key ~/.ssh/aws`
 
 2. terraform
-`terraform init`
-`terraform fmt`
-`terraform validate`
-`terraform plan -out first_plan`
-`terraform apply`
+`terraform init` initialize directory and downloads plugins
+`terraform fmt` to nicely format
+`terraform validate` to validate the syntax
+`terraform plan -out first_plan` create the plan and writes to file 'first_plan'
+`terraform apply` to apply the configuration
 
 3. Ansible
 `ansible-playbook playbook.yml --syntax-check` to check the playbook
@@ -30,3 +25,6 @@ inside ~/acit-4640/intro-to-ansible-lab-files/scripts:
 
 4. Screenshot
 ![Nginx Running](nginx-running.png)
+
+5. Destroying resources
+`terraform destroy`
